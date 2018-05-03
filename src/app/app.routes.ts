@@ -1,5 +1,4 @@
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { ForgetPwdComponent } from './user/forget-pwd/forget-pwd.component';
