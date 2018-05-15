@@ -3,22 +3,37 @@ import { ActivatedRoute, Router, UrlTree, PRIMARY_OUTLET, UrlSegmentGroup, UrlSe
 import { flyIn } from '../../animations/fly-in';
 
 @Component({
-  selector: 'app-comment-table',
-  templateUrl: './comment-table.component.html',
-  styleUrls: ['./comment-table.component.scss'],
-  animations: [
+  selector: 'app-comment-table'
+  , templateUrl: './comment-table.component.html'
+  , styleUrls: ['./comment-table.component.scss']
+  , animations: [
     flyIn
   ]
 })
 export class CommentTableComponent implements OnInit {
   public worker: Worker;
 
-  public commentList:Array<any>=[
-    {id:'1',content:'这是一条不合法的评论',userName:'damoqiongqiu',time:'2017-07-15 16:22:58'}
+  public commentList: Array < any >= [
+    { id: '1', content: '这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-15 16:22:58' }
+    , { id: '2', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '3', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '4', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '5', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '6', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '7', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '8', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '9', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '11', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '12', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '12', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '12', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+    , { id: '12', content: '22这是一条不合法的评论', userName: 'damoqiongqiu', time: '2017-07-12 16:22:58' }
+
+
   ];
 
-  constructor(public router: Router,
-    public activeRoute: ActivatedRoute) {
+  constructor(public router: Router
+    , public activeRoute: ActivatedRoute) {
 
   }
 
@@ -54,11 +69,11 @@ export class CommentTableComponent implements OnInit {
     console.log(commentId);
   }
 
-  public onRowSelect(event):void{
+  public onRowSelect(event): void {
 
   }
 
-  public onRowUnselect(event):void{
-    
+  public onRowUnselect(event): void {
+
   }
 }
