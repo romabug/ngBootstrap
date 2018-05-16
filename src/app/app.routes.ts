@@ -7,6 +7,7 @@ import { ChartComponent } from './chart/chart.component';
 import { GaodeMapComponent } from './map/gaode-map/gaode-map.component';
 import { UseJqueryComponent } from './use-jquery/use-jquery.component';
 import { JsplumbDemoComponent } from './jsplumb-demo/jsplumb-demo.component';
+import {MyhttpComponent} from './myhttp/myhttp.component';
 
 export const appRoutes=[
 	{
@@ -18,6 +19,12 @@ export const appRoutes=[
 		path:"echart",
 		component:ChartComponent
 	},
+
+  {
+    path:"myhttp",
+    component:MyhttpComponent
+  },
+
 	{
 		path:"map",
 		component:GaodeMapComponent

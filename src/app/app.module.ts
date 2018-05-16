@@ -25,6 +25,7 @@ import { AmapComponent } from './map/gaode-map/amap/amap.component';
 import { UseJqueryComponent } from './use-jquery/use-jquery.component';
 import { JsplumbDemoComponent } from './jsplumb-demo/jsplumb-demo.component';
 import {appRoutes} from './app.routes';
+import { MyhttpComponent } from './myhttp/myhttp.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -42,7 +43,8 @@ export function createTranslateLoader(http: Http) {
     AmapComponent,
     GaodeMapComponent,
     UseJqueryComponent,
-    JsplumbDemoComponent
+    JsplumbDemoComponent,
+    MyhttpComponent
   ],
   imports: [
     BrowserModule,
