@@ -8,7 +8,7 @@ import { User } from '../model/user-model';
 export class UserLoginService {
   public userLoginURL = 'mock-data/user-login-mock.json';
   public subject: Subject<User> = new Subject<User>();
-  
+
   constructor(public http:Http){}
 
   public get currentUser():Observable<User>{
@@ -23,6 +23,7 @@ export class UserLoginService {
               console.log("user object>"+user);
               if(user && user.token){
                 localStorage.setItem("currentUser",JSON.stringify(user));
+                localStorage.name2 = "caibin cai";
                 this.subject.next(Object.assign({},user));
               }
               return response;

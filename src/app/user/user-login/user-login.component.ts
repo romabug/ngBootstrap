@@ -3,7 +3,8 @@ import { ActivatedRoute, Router, ActivatedRouteSnapshot, RouterState, RouterStat
 import { UserLoginService } from './user-login.service';
 import { Observable } from 'rxjs/Observable';
 
-import { User } from '../model/user-model';
+import {User, Wwp} from '../model/user-model';
+
 import { fadeIn } from '../../animations/fade-in';
 
 @Component({
@@ -15,6 +16,8 @@ import { fadeIn } from '../../animations/fade-in';
 export class UserLoginComponent implements OnInit {
     public user:User = new User();
     public error : Error;
+
+    private wwp:Wwp = new Wwp(44, 'sirius', '5 half st');
 
     constructor(
         public router: Router,
@@ -50,5 +53,6 @@ export class UserLoginComponent implements OnInit {
 
     public forgetPwd():void{
       this.router.navigateByUrl("forgetpwd");
+
     }
 }
