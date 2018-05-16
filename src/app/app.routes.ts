@@ -50,12 +50,12 @@ export const appRoutes=[
 		path:'user',
 		loadChildren:'./user/user.module#UserModule'
 	},
-	{ 
-		path: 'manage', 
+	{
+		path: 'manage',
 		loadChildren:'./manage/manage.module#ManageModule'
 	},
-	{ 
-		path: 'jquery', 
+	{
+		path: 'jquery',
 		component:UseJqueryComponent
 	},
 	{

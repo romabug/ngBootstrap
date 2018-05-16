@@ -33,12 +33,7 @@
                 <li class="dropdown">
                     <a routerLink="userlist">{{'app.userlist' | translate}}</a>
                 </li>
-                <li class="dropdown">
-                    <a href="http://git.oschina.net/mumu-osc/NiceFish" data-toggle="dropdown" class="dropdown-toggle" target="_blank">NiceFish</a>
-                </li>
-                <li class="dropdown">
-                    <a href="http://git.oschina.net/zt_zhong/CodeBe" data-toggle="dropdown" class="dropdown-toggle" target="_blank">CodeBe</a>
-                </li>
+
             </ul>
             <ul *ngIf="!currentUser?.userName" class="nav navbar-nav navbar-right">
                 <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
